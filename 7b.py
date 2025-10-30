@@ -1,0 +1,38 @@
+def add(a, b):
+    """Return the sum of two numbers."""
+    return a + b
+
+def subtract(a, b):
+    """Return the difference between two numbers."""
+    return a - b
+
+def multiply(a, b):
+    """Return the product of two numbers."""
+    return a * b
+
+def divide(a, b):
+    """Return the quotient of two numbers. Handles division by zero."""
+    if b != 0:
+        return a / b
+    else:
+        return "Error: Division by zero"
+
+def greet(name):
+    """Return a greeting message for the user."""
+    return f"Hello, {name}! Welcome to the program."
+
+def main():
+    num1 = 10
+    num2 = 5
+    print("Arithmetic Operations:")
+    print(f"Sum of {num1} and {num2}:", add(num1, num2))
+    print(f"Difference between {num1} and {num2}:", subtract(num1, num2))
+    print(f"Product of {num1} and {num2}:", multiply(num1, num2))
+    print(f"Quotient of {num1} and {num2}:", divide(num1, num2))
+    
+    user_name = "Alice"
+    print("\nGreeting:")
+    print(greet(user_name))
+
+if __name__ == "__main__":
+    main()
